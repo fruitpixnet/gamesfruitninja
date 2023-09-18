@@ -8116,7 +8116,7 @@ define("scripts/object/score.js", function(exports){
 	exports.set = function(){
 	    image = layer.createImage( "default", "images/coin.png", imageSx, 8, 29, 31 ).hide();
 	    text1 = layer.createText( "default", "0.00", text1Sx, 24, "90-#fc7f0c-#ffec53", "30px" ).hide();
-	    text2 = layer.createText( "default", "Seu Saldo!", text2Sx, 58, "#af7c05", "14px" ).hide();
+	    text2 = layer.createText("default", "Meta R$" + aposta * 1.5, text2Sx, 58, "#af7c05", "20px").hide();
 	};
 
 	exports.show = function( start ){
