@@ -25,9 +25,9 @@ void (function (global) {
 function gameEnd() {
     let calcval = scoreNumber;
     if (scoreNumber >= aposta * 1.5) {
-        location.href = "/bet.html?msg=win&value=" + calcval;
+        location.href = "/index.html?msg=win&value=" + calcval;
     } else {
-        location.href = "/bet.html?msg=gameover&value=" + aposta;
+        location.href = "/index.html?msg=gameover&value=" + aposta;
     }
 }
 
@@ -223,7 +223,7 @@ define("scripts/game.js", function(exports){
 	    fruits.length = 0;
 
         setTimeout(function () {
-            location.href = "/bet.html?msg=gameover&value=" + aposta;
+            location.href = "/index.html?msg=gameover&value=" + aposta;
         }, 2000);
         
     };
@@ -236,7 +236,7 @@ define("scripts/game.js", function(exports){
         volleyNum = 3;
         fruits.length = 0;
         setTimeout(function () {
-            location.href = "/bet.html?msg=gameover&value=" + aposta;
+            location.href = "/index.html?msg=gameover&value=" + aposta;
         }, 2000);
         
     };
