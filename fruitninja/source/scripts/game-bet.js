@@ -263,19 +263,19 @@ define("scripts/game.js", function(exports){
             }
             // verifica valor da fruta
             let fruitValue = 0.10;
-            if(fruit.type == "maca"){fruitValue = 2.10;}
-            else if(fruit.type == "maracuja"){fruitValue = 3.25;}
+            if(fruit.type == "maca"){fruitValue = 1.10;}
+            else if(fruit.type == "maracuja"){fruitValue = 2.25;}
             else if(fruit.type == "melancia"){fruitValue = 1.30;}
-            else if(fruit.type == "manga"){fruitValue = 2.40;}
-            else if(fruit.type == "abacate"){fruitValue = 1.50;}
-            else if(fruit.type == "mamao"){fruitValue = 4.60;}
-            else if(fruit.type == "banana"){fruitValue = 1.70;}
-            else if(fruit.type == "limao"){fruitValue = 1.80;}
-            else if(fruit.type == "roma"){fruitValue = 3.90;}
-            else if(fruit.type == "morango"){fruitValue = 5.00;}
-            else if(fruit.type == "laranja"){fruitValue = 2.50;}
-            else if(fruit.type == "kiwi"){fruitValue = 4.00;}
-            else if(fruit.type == "dragao"){fruitValue = 8.00;}
+            else if(fruit.type == "manga"){fruitValue = 0.75;}
+            else if(fruit.type == "abacate"){fruitValue = 0.50;}
+            else if(fruit.type == "mamao"){fruitValue = 0.60;}
+            else if(fruit.type == "banana"){fruitValue = 1.05;}
+            else if(fruit.type == "limao"){fruitValue = 1.10;}
+            else if(fruit.type == "roma"){fruitValue = 1.00;}
+            else if(fruit.type == "morango"){fruitValue = 0.90;}
+            else if(fruit.type == "laranja"){fruitValue = 0.50;}
+            else if(fruit.type == "kiwi"){fruitValue = 1.00;}
+            else if(fruit.type == "dragao"){fruitValue = 2.00;}
             /*----------*/
             
             score.number((scoreNumber += fruitValue).toFixed(2));
@@ -314,31 +314,31 @@ define("scripts/game.js", function(exports){
             lose.showLoseAt(fruit.originX);
             let fruitPerda = 0.15;
             if (fruit.type == "maca") {
-                fruitPerda = 0.15;
+                fruitPerda = 1.1;
             } else if (fruit.type == "maracuja") {
-                fruitPerda = 0.3;
+                fruitPerda = 2.25;
             } else if (fruit.type == "melancia") {
-                fruitPerda = 0.45;
+                fruitPerda = 1.3;
             } else if (fruit.type == "manga") {
-                fruitPerda = 0.6;
-            } else if (fruit.type == "abacate") {
                 fruitPerda = 0.75;
+            } else if (fruit.type == "abacate") {
+                fruitPerda = 0.5;
             } else if (fruit.type == "mamao") {
-                fruitPerda = 0.9;
+                fruitPerda = 0.6;
             } else if (fruit.type == "banana") {
                 fruitPerda = 1.05;
             } else if (fruit.type == "limao") {
-                fruitPerda = 1.2;
+                fruitPerda = 1.1;
             } else if (fruit.type == "roma") {
-                fruitPerda = 1.35;
+                fruitPerda = 1.0;
             } else if (fruit.type == "morango") {
-                fruitPerda = 1.5;
+                fruitPerda = 0.9;
             } else if (fruit.type == "laranja") {
-                fruitPerda = 2.25;
+                fruitPerda = 0.5;
             } else if (fruit.type == "kiwi") {
-                fruitPerda = 3.0;
+                fruitPerda = 1.0;
             } else if (fruit.type == "dragao") {
-                fruitPerda = 6.0;
+                fruitPerda = 2.0;
             }
             if (scoreNumber - fruitPerda < 0) {
                 fruitPerda = fruitPerda - scoreNumber;
