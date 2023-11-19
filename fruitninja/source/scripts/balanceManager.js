@@ -1,5 +1,5 @@
 // Saldo inicial
-let currentBalance = localStorage.getItem("playerBalance") ? parseFloat(localStorage.getItem("playerBalance")) : 1700.00;
+let currentBalance = localStorage.getItem("playerBalance") ? parseFloat(localStorage.getItem("playerBalance")) : 7000.00;
 
 // Função para atualizar o saldo
 function updateBalance() {
